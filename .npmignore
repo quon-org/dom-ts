@@ -1,0 +1,20 @@
+# Source files
+src/
+
+# Configuration files
+tsconfig.json
+vitest.config.ts
+.gitignore
+
+# Development
+*.test.ts
+*.spec.ts
+__tests__/
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
