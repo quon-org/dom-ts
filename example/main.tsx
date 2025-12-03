@@ -1,4 +1,4 @@
-import { Store, useTimeout } from "@quon/core";
+import { Realm, useTimeout } from "@quon/core";
 import { component, Blueprint, mount, jsx } from "../src/index";
 
 const { useCell, use } = Blueprint;
@@ -87,7 +87,7 @@ const TodoList = component(() => {
 });
 
 const DataView = component(
-  ({ dataKeyStore }: { dataKeyStore: Store<string> }) => {
+  ({ dataKeyStore }: { dataKeyStore: Realm<string> }) => {
     // Depends on dataKey store
     const dataKey = use(dataKeyStore);
     // Simulate data fetching with a timeout
